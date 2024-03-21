@@ -1,0 +1,28 @@
+/* Zerando espaçamentos e margens de todos os elementos */
+* {margin: 0; padding: 0;}
+
+/* Seletos mais simples: nome da tag */
+body {
+    background-color: gray; /* Cor do fundo */
+    color: darkred; /* Cor do texto */
+}
+
+/* Seletor pelo atributo único id */
+#corpo {
+    margin:10%; /* Margem externa */
+    padding: 10%; /* Espaçamento interno */
+    background-color: darkgrey;
+    border: 2px solid #000; /* borda sólida, 2px de espessura */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+/* Seletor com pseudo-classe :houver (quando passa o cursor */
+#corpo:hover {
+    background-color: white;
+    cursor: grab; /* troca cursor do mouse */
+    border-radius: 10px;
+}
+#corpo:active {
+    cursor: grabbing;
+}
